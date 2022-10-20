@@ -2,7 +2,7 @@
 
 Детекция производится с использованием модели **yolov5s**.
 
-## Подготовка данных
+## 1 - Подготовка данных
 
 1. Скачать [архив](https://disk.yandex.ru/d/nk-h0vv20EZvzg) с данными (gorai);
 
@@ -20,7 +20,7 @@ python src/data/prepare --args
 make prepare_data
 ```
 
-## Запуск обучения
+## 2 - Запуск обучения
 
 1. Скачать предобученную модель YoloV5 [здесь](https://github.com/ultralytics/yolov5/releases/tag/v6.1). Я использую YoloV5s;
 
@@ -49,3 +49,6 @@ python yolov5/train.py --args
 make train
 ```
 
+## 3 - Эксперименты
+
+- Ссылка на [эксперимент](https://app.clear.ml/projects/851ea528d07a4d20b08779aec07d8d0a/experiments/29b39603ccd347d2841495aab30ef834/output/execution) в ClearML
