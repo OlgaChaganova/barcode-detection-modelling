@@ -238,7 +238,8 @@ class DatasetPreparator(object):
             Path(df_labels_path).mkdir(parents=True, exist_ok=True)
             for index in tqdm(df.index):
                 xc, yc, h_rel, w_rel = self._convert_annotation(index)
-                txt = f'1 {xc} {yc} {h_rel} {w_rel}'
+                num_class = 0
+                txt = f'{num_class} {xc} {yc} {h_rel} {w_rel}'
                 image_filename = df.loc[index, 'filename']
                 annot_filename = os.path.split(image_filename)[-1]
                 annot_filename = annot_filename.replace(self._file_ext, 'txt')
