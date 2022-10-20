@@ -22,16 +22,22 @@ make prepare_data
 
 ## Запуск обучения
 
-0. Скачать предобученную модель YoloV5 [здесь](https://github.com/ultralytics/yolov5/releases/tag/v6.1). Я использую YoloV5s;
+1. Скачать предобученную модель YoloV5 [здесь](https://github.com/ultralytics/yolov5/releases/tag/v6.1). Я использую YoloV5s;
 
+2. Подготовить виртуальное окружение (Python >= 3.9):
 
-1. Отредактировать конфиги:
+```commandline
+make install
+clearml-init
+```
+
+3. Отредактировать конфиги:
    - `configs/data.yml` -- для данных;
    - `configs/hyps.yml` -- для гиперпараметров;
    - `configs/yolov5s.yml` -- для модели.
 
 
-2. Выполнить (`python yolov5/train.py --help` для вывода списка возможных аргументов):
+4. Выполнить (`python yolov5/train.py --help` для вывода списка возможных аргументов):
 
 ```commandline
 python yolov5/train.py --args

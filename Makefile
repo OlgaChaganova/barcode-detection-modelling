@@ -1,7 +1,9 @@
 .PHONY: install
 install:
 	pip install -r requirements.txt
+	pip install -r yolov5/requirements.txt
 	pip install -U rich
+
 
 
 .PHONY: prepare_data
