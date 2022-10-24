@@ -53,3 +53,13 @@ make train
 
 - Ссылка на [эксперимент](https://app.clear.ml/projects/851ea528d07a4d20b08779aec07d8d0a/experiments/2f0176e6d09044d1b233355a2e7a81f6/output/execution) в ClearML
 
+## 4 - Инференс и веса моделей
+
+1. Пример, как запускать детектор - `notebooks/inference.ipynb`;
+
+2. Скачать веса модели (предварительно настроить доступ к удаленному серверу 91.206.15.25):
+```commandline
+dvc pull weights/<model_name>.dvc
+```
+
+Скачать можно как модель в формате TorchScript, так и ONNX, но инференс написан только под TorchScript.
