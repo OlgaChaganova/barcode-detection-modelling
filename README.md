@@ -51,4 +51,5 @@ make train
 
 ## 3 - Эксперименты
 
-- Ссылка на [эксперимент](https://app.clear.ml/projects/851ea528d07a4d20b08779aec07d8d0a/experiments/29b39603ccd347d2841495aab30ef834/output/execution) в ClearML
+- Ссылка на [эксперимент](https://app.clear.ml/projects/851ea528d07a4d20b08779aec07d8d0a/experiments/2f0176e6d09044d1b233355a2e7a81f6/output/execution) в ClearML
+
