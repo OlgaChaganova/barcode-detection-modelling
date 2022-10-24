@@ -157,3 +157,5 @@ cython_debug/
 
 # Models
 *.pt
+
+!weights/*.dvc
