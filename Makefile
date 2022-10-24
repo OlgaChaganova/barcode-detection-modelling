@@ -13,7 +13,7 @@ prepare_data:
 
 .PHONY: train
 train:
-	python yolov5/train.py --img 640 --batch 16 --epochs 3 --data configs/data.yml --weights weights/yolov5s.pt --cfg configs/yolov5s.yml --hyp configs/hyps.yml
+	python yolov5/train.py --img 640 --batch 64 --epochs 500 --data configs/data.yml --weights weights/yolov5s.pt --cfg configs/yolov5s.yml --hyp configs/hyps.yml
 
 
 .PHONY: lint
