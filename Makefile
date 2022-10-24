@@ -18,7 +18,7 @@ train:
 
 .PHONY: convert
 convert:
-    python yolov5/export.py --weights weights/yolov5s_barcode_detector.pt --img 480 --dynamic --nms --include torchscript onnx
+	python yolov5/export.py --weights weights/yolov5s_barcode_detector.pt --img 480 --dynamic --nms --include torchscript onnx
 
 
 .PHONY: lint
