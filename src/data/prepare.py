@@ -217,7 +217,7 @@ class DatasetPreparator(object):
         yc = (y_min + y_max) / 2 / h_abs
         h_rel = (y_max - y_min) / h_abs
         w_rel = (x_max - x_min) / w_abs
-        return xc, yc, h_rel, w_rel
+        return xc, yc, w_rel, h_rel
 
     def _prepare_annotations(
         self,
