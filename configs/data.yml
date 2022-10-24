@@ -1,7 +1,8 @@
 # data
-train: ../data/barcodes-annotated-gorai_prepared/images/train/
-val:  ../data/barcodes-annotated-gorai_prepared//images/train/
-test: ../data/barcodes-annotated-gorai_prepared//images/train/
+path: ../data/barcodes-annotated-gorai_prepared
+train: images/train/
+val:  images/val/
+test: imagess/test/
 
 # number of classes
 nc: 1
