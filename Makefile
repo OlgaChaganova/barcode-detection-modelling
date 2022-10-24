@@ -13,7 +13,12 @@ prepare_data:
 
 .PHONY: train
 train:
-	python yolov5/train.py --img 640 --batch 64 --epochs 500 --data configs/data.yml --weights weights/yolov5s.pt --cfg configs/yolov5s.yml --hyp configs/hyps.yml
+	python yolov5/train.py --img 480 --batch 64 --epochs 500 --data configs/data.yml --weights weights/yolov5s.pt --cfg configs/yolov5s.yml --hyp configs/hyps.yml
+
+
+.PHONY: convert
+convert:
+    python yolov5/export.py --weights weights/yolov5s_barcode_detector.pt --img 480 --dynamic --nms --include torchscript onnx
 
 
 .PHONY: lint
