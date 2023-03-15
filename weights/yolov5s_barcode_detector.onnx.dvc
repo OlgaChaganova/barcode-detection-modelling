@@ -1,0 +1,4 @@
+outs:
+- md5: 5825848a3afbb206753891e9b3d89714
+  size: 28098251
+  path: yolov5s_barcode_detector.onnx

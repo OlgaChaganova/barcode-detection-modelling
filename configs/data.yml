@@ -1,0 +1,11 @@
+# data
+path: ../data/barcodes-annotated-gorai_prepared
+train: images/train/
+val:  images/val/
+test: imagess/test/
+
+# number of classes
+nc: 1
+
+# class names
+names: ['barcode']
